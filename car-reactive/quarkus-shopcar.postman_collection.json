@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "5ab2fd66-5eb7-4f75-b48c-0c9701cb1ef1",
+		"name": "quarkus-car",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5726533"
+	},
+	"item": [
+		{
+			"name": "saveCar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"model\": \"BMW 525\",\r\n    \"bodyType\": \"sedan\",\r\n    \"brand\": \"BMW\",\r\n    \"year\": \"2007\",\r\n    \"price\": 8500.0,\r\n    \"seats\": 5,\r\n    \"doors\": 4,\r\n    \"urlImage\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCarById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cars/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCarByBrand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cars/brand/BMW",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"brand",
+						"BMW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCarSize",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cars/size",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"size"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveShop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"state\": \"La Paz\",\r\n    \"address\": \"Mallasa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShops",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"model\": \"BMW 525\",\r\n    \"bodyType\": \"sedan\",\r\n    \"brand\": \"BMW\",\r\n    \"year\": \"2007\",\r\n    \"price\": 8500.0,\r\n    \"seats\": 5,\r\n    \"doors\": 4,\r\n    \"urlImage\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addToShop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"model\": \"BMW 525\",\r\n    \"bodyType\": \"sedan\",\r\n    \"brand\": \"BMW\",\r\n    \"year\": \"2007\",\r\n    \"price\": 8500.0,\r\n    \"seats\": 5,\r\n    \"doors\": 4,\r\n    \"urlImage\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars/1/shop/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"1",
+						"shop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

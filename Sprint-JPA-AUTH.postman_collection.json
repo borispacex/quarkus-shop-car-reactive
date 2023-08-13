@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "4fa12b00-01b0-4c0f-b4fb-a59a080614ed",
+		"name": "Sprint-JPA-AUTH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5726533"
+	},
+	"item": [
+		{
+			"name": "JPA-data",
+			"item": [
+				{
+					"name": "getAllPizzas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPizzaById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "savePizza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"name PIZZA\",\r\n    \"description\": \"descricion de pizza\",\r\n    \"price\": 23.0,\r\n    \"vegetarian\": false,\r\n    \"vegan\": false,\r\n    \"available\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/pizzas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePizza",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idPizza\": 1,\r\n    \"name\": \"Pepperoni update\",\r\n    \"description\": \"Pepperoni, Homemade Tomato Sauce & Mozzarella.\",\r\n    \"price\": 23.0,\r\n    \"vegetarian\": false,\r\n    \"vegan\": false,\r\n    \"available\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/pizzas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePizza",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas/13",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPizzasAvaiable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas/available",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas",
+								"available"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPizzasByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas/name/margherita",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas",
+								"name",
+								"margherita"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPizzasWithIngredient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas/with/mozzarella",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas",
+								"with",
+								"mozzarella"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPizzasWithoutIngredient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/pizzas/without/mozzarella",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pizzas",
+								"without",
+								"mozzarella"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOrdersToday",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/orders/today",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders",
+								"today"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOutsideOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/orders/outside",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"orders",
+								"outside"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTH",
+			"item": []
+		}
+	]
+}
